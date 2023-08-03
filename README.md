@@ -4,10 +4,7 @@ Welcome, fellow music enthusiasts! SoundTrack is a social media platform on whic
 
 The app uses OAuth 2.0 to fetch and aggregate user-specific analytics from Spotify's Web API. The frontend is written in Android Studio, and the backend uses Java Springboot with Spring Security. All analytic posts are generated using a custom Javascript-based image generator microservice. 
 
-### Post Feed
-![Screen Shot 2023-08-02 at 9 29 56 PM](https://github.com/shiv-neel/soundtrack/assets/87916506/4904c0ea-193e-4029-b71d-4dcf275c5762)
-
-### Single Post
+### Share your analytics, fetched directly from Spotify's API
 ![Screen Shot 2023-08-02 at 9 30 41 PM](https://github.com/shiv-neel/soundtrack/assets/87916506/8cc0a5cb-e41b-4e54-853a-361ca9486c44)
 
 ### Authentication
