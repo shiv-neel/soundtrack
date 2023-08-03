@@ -1,6 +1,6 @@
 # Soundtrack
 
-Soundtrack is a social media mobile application tailored for musich enthusiasts! Using this app, you can share automated analytics posts about your favorite songs, albums, and artists, and connect with your fellow music lovers. 
+Welcome, fellow music enthusiasts! SoundTrack is a social media platform on which you can share automated analytics posts about your favorite songs, albums, and artists, and connect with your fellow music lovers. 
 
 The app uses OAuth 2.0 to fetch and aggregate user-specific analytics from Spotify's Web API. The frontend is written in Android Studio, and the backend uses Java Springboot with Spring Security. All analytic posts are generated using a custom Javascript-based image generator microservice. 
 
