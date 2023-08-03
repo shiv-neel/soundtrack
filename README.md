@@ -1,4 +1,4 @@
-# Soundtrack
+# SoundTrack
 
 Welcome, fellow music enthusiasts! SoundTrack is a social media platform on which you can share automated analytics posts about your favorite songs, albums, and artists, and connect with your fellow music lovers. 
 
