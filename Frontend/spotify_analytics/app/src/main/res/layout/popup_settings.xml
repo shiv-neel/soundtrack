@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp">
+
+    <EditText
+        android:id="@+id/general_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="jpg link"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/general_edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/general_edit_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="0dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button_general_edit_submit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225sp"
+        android:text="Make Changes"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="70sp"
+        android:padding="5sp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button_general_edit_Stop"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="X"-->
+<!--        android:textSize="20sp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginLeft="350sp"-->
+<!--        android:padding="5sp" />-->
+
+
+
+</RelativeLayout>

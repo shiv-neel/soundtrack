@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuratorProfileEditableActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#808080"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="50sp" />
+
+    <TextView
+        android:id="@+id/link_to_friends"
+        android:text="Friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#7f7f7f"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/link_to_followers"
+        android:text="Followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#7f7f7f"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/link_to_following"
+        android:text="Following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#7f7f7f"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/friends_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185sp"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="75sp"
+        android:padding="5sp" />
+
+    <TextView
+        android:id="@+id/follower_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185sp"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="175sp"
+        android:padding="5sp" />
+
+    <TextView
+        android:id="@+id/following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185sp"
+        android:textSize="19sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="275sp"
+        android:padding="5sp" />
+
+    <ImageView
+        android:id="@+id/Curator_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_check_circle_outline_24"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="340dp"/>
+
+</RelativeLayout>

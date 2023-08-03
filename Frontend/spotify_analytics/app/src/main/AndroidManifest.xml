@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Spotify_analytics"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminCuratorNotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowersListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CuratorUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowingListActivity"
+            android:exported="false"
+            android:parentActivityName=".SearchUserActivity" />
+        <activity
+            android:name=".FriendsListActivity"
+            android:exported="false"
+            android:parentActivityName=".GeneralUserProfileActivity" />
+        <activity
+            android:name=".GeneralUserProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".SearchUserActivity" />
+        <activity
+            android:name=".AdminSearchUsersActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewImageActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CuratorProfileEditableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralUserProfileEditableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPostActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FriendsNotificationsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CreateUploadPostActivity"
+            android:exported="false"
+            android:parentActivityName=".SearchSpotifyItemActivity" />
+        <activity
+            android:name=".SearchSpotifyItemActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        
+        <activity android:name=".CreateWrappedPostActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SearchUserActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".SpotifyAuthActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Spotify_analytics.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

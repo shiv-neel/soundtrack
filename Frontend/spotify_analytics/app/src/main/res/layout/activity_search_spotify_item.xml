@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchSpotifyItemActivity">
+
+    <LinearLayout
+        android:id="@+id/search_spotify_item_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/create_wrapped_post_text_view"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want to create a Wrapped Post instead? Click here"
+            android:textColor="@color/spotify_green"
+            android:layout_marginVertical="10dp"
+            />
+        <TextView
+            android:id="@+id/search_spotify_item_type_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="18sp"
+            android:text="I want to post about a..." />
+        <RadioGroup
+            android:id="@+id/search_item_type_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_button_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Artist"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Album"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Song"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_spotify_item_query_layout"
+        android:layout_below="@+id/search_spotify_item_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/search_spotify_item_query_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="18sp"
+            android:text="Search for an artist:" />
+
+        <EditText
+            android:id="@+id/search_spotify_item_query_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_spotify_item_query_text"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="90dp"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/search_spotify_item_button"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/search_spotify_item_query_edit_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="-69dp"
+            android:contentDescription="@string/menu_user_search"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_manage_search_24" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_results_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_spotify_item_query_layout"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

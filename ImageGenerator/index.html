@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css?family=Outfit&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./main.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var colors = ['color-1', 'color-2', 'color-3'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+document.querySelector('.random-color').classList.add(randomColor);
+		</script>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-size: 14px;
+			}
+			.v1_2 {
+				width: 840px;
+				height: 840px;
+				background: rgba(130, 57, 250, 1);
+				opacity: 1;
+				position: relative;
+				margin-top: -20px;
+				left: -20px;
+				overflow: hidden;
+				display: flex;
+			}
+			.v1_3 {
+				width: 1000px;
+				display: flex;
+				justify-content: center;
+				margin-top: 40px;
+				color: rgba(255, 255, 255, 1);
+				position: relative;
+				font-family: Outfit;
+				font-weight: Bold;
+				font-size: 52px;
+				opacity: 1;
+				text-align: left;
+			}
+			.v1_4 {
+				width: 1000px;
+				color: rgba(255, 255, 255, 1);
+				position: absolute;
+				top: 150px;
+				left: 50px;
+				font-family: Outfit;
+				font-weight: Bold;
+				font-size: 24px;
+				opacity: 1;
+				text-align: left;
+                list-style-type: none;
+			}
+		</style>
+		<div class="v1_2">
+                {{strings}}
+		</div>
+	</body>
+</html>
